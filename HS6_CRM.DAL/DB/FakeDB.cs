@@ -13,15 +13,19 @@ namespace HS6_CRM.DAL.DB
         /// <summary>
         /// Kullanıcı tablosu
         /// </summary>
-        List<UserAccount> UserAccount;
+        List<UserAccount> UserAccountList;
 
         public FakeDB()
         {
             //init
-            seedData();
             
-            UserAccount = new List<UserAccount>();
+            
+            UserAccountList = new List<UserAccount>();
+            seedData();
         }
+        public List<UserAccount> UserAccount { get { return UserAccountList; } }
+
+
         /// <summary>
         /// DB ayağa kaltığında içinde test edileiblir bir data oluşması için
         /// </summary>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HS6_CRM.WinUI
 {
-    public partial class Form1 : Form
+    public partial class FormCustomerList : Form
     {
-        public Form1()
+        public FormCustomerList()
         {
             InitializeComponent();
         }
