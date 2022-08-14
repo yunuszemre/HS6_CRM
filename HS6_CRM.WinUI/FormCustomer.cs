@@ -16,5 +16,16 @@ namespace HS6_CRM.WinUI
         {
             InitializeComponent();
         }
+
+        private void FormCustomer_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormCustomer_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormMain formMain = new FormMain();
+            formMain.Show();
+        }
     }
 }

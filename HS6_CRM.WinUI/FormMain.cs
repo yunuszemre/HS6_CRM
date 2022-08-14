@@ -26,5 +26,12 @@ namespace HS6_CRM.WinUI
         {
             Application.Exit();
         }
+
+        private void MenuItemCustomerList_Click(object sender, EventArgs e)
+        {
+            FormCustomer customerForm = new FormCustomer();
+            customerForm.Show();
+            this.Hide();
+        }
     }
 }

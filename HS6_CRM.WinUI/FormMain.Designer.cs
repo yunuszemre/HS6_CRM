@@ -56,7 +56,7 @@
             this.MenuItemNewCustomer,
             this.MenuItemCustomerList});
             this.müşteriİşlemleriToolStripMenuItem.Name = "müşteriİşlemleriToolStripMenuItem";
-            this.müşteriİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
+            this.müşteriİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(106, 19);
             this.müşteriİşlemleriToolStripMenuItem.Text = "Müşteri İşlemleri";
             // 
             // MenuItemNewCustomer
@@ -70,6 +70,7 @@
             this.MenuItemCustomerList.Name = "MenuItemCustomerList";
             this.MenuItemCustomerList.Size = new System.Drawing.Size(180, 22);
             this.MenuItemCustomerList.Text = "Müşteri Listesi";
+            this.MenuItemCustomerList.Click += new System.EventHandler(this.MenuItemCustomerList_Click);
             // 
             // kullanıcıİşlemleriToolStripMenuItem
             // 
@@ -77,19 +78,19 @@
             this.MenuItemNewUser,
             this.MenuItemUserList});
             this.kullanıcıİşlemleriToolStripMenuItem.Name = "kullanıcıİşlemleriToolStripMenuItem";
-            this.kullanıcıİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.kullanıcıİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 19);
             this.kullanıcıİşlemleriToolStripMenuItem.Text = "Kullanıcı İşlemleri";
             // 
             // MenuItemNewUser
             // 
             this.MenuItemNewUser.Name = "MenuItemNewUser";
-            this.MenuItemNewUser.Size = new System.Drawing.Size(180, 22);
+            this.MenuItemNewUser.Size = new System.Drawing.Size(154, 22);
             this.MenuItemNewUser.Text = "Yeni Kullanıcı";
             // 
             // MenuItemUserList
             // 
             this.MenuItemUserList.Name = "MenuItemUserList";
-            this.MenuItemUserList.Size = new System.Drawing.Size(180, 22);
+            this.MenuItemUserList.Size = new System.Drawing.Size(154, 22);
             this.MenuItemUserList.Text = "Kullanıcı Listesi";
             // 
             // FormMain
@@ -100,7 +101,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";
